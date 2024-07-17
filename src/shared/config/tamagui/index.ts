@@ -1,3 +1,3 @@
-import * as Pretendard from "./pretendard";
+import * as Pretendard from './pretendard';
 
 export { Pretendard };

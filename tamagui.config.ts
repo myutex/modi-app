@@ -1,11 +1,11 @@
-import { config } from "@tamagui/config/v3";
-import { createTamagui } from "tamagui"; // or '@tamagui/core'
+import { config } from '@tamagui/config/v3';
+import { createTamagui } from 'tamagui'; // or '@tamagui/core'
 
-import { Pretendard } from "@shared/config/tamagui";
+import { Pretendard } from '@shared/config/tamagui';
 
 const appConfig = createTamagui({
   ...config,
-  defaultFont: "default",
+  defaultFont: 'default',
   fonts: {
     ...config.fonts,
     default: Pretendard.pretendardRegular,
@@ -16,7 +16,7 @@ const appConfig = createTamagui({
 
 export type AppConfig = typeof appConfig;
 
-declare module "tamagui" {
+declare module 'tamagui' {
   // or '@tamagui/core'
   // overrides TamaguiCustomConfig so your custom types
   // work everywhere you import `tamagui`
