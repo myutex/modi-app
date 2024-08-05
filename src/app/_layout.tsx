@@ -3,7 +3,7 @@ import { Stack } from 'expo-router';
 
 import { TamaguiProvider } from 'tamagui';
 
-import config from '@/tamagui.config';
+import tamaguiConfig from '@/tamagui.config';
 
 export default function RootLayout() {
   const [loaded] = useFonts({
@@ -22,7 +22,7 @@ export default function RootLayout() {
   }
 
   return (
-    <TamaguiProvider config={config}>
+    <TamaguiProvider config={tamaguiConfig}>
       <Stack>
         <Stack.Screen name="index" />
       </Stack>
